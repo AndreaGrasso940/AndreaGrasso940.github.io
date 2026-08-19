@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea's Portfolio</title>
+    <style>
+        /* base settings and colors */
+        :root { --primary: #2c3e50; --secondary: #3498db; --bg: #f8f9fa; --text: #333; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 0; background-color: var(--bg); color: var(--text); }
+        
+        /* header and navigation */
+        header { background: var(--primary); color: #fff; text-align: center; padding: 3rem 1rem; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        nav { background: #1a252f; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: var(--secondary); }
+
+        /* main container */
+        main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        section { background: #fff; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); scroll-margin-top: 80px; }
+        h2 { border-bottom: 3px solid var(--secondary); padding-bottom: 0.5rem; display: inline-block; }
+
+        /* projects grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .card { border: 1px solid #e1e4e8; padding: 1.5rem; border-radius: 8px; transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .card a { display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: var(--secondary); color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
+        .card a:hover { background: #2980b9; }
+
+        /* footer */
+        footer { text-align: center; padding: 2rem; background: var(--primary); color: #ccc; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Andrea Claudio Grasso</h1>
+        <p>Data Scientist / Machine Learning Engineer / AI Engineer </p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#personal">Personal Projects</a>
+        <a href="#university">University Projects</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Data Scientist with 2 years of experience delivering Artificial Intelligence and Deep Learning solutions. Currently focusing on the hands-on implementation of LLM architectures, RAG, and Agentic AI.</p>
+            <p>Blending a robust analytical foundation (ongoing Master’s in Data Science) with a proven ability to rapidly iterate according to Enterprise client requirements.</p>
+        </section>
+
+        <section id="personal">
+            <h2>Personal Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>MCP Human-in-the-Loop Agent</h3>
+                    <p>A lightweight, robust Model Context Protocol (MCP) server implementation designed to mitigate the "Agentic Loss of Control" risk in LLM-driven environments.</p>
+                    <a href="https://github.com/AndreaGrasso940/mcp-human-in-the-loop-agent" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="card">
+                    <h3>FinanceQuery_AI — Local AI Financial Analyst</h3>
+                    <p>Local AI financial analyst — privacy-first, zero math hallucinations. Upload your Excel and chat with your data. Powered by Ollama + Llama 3.2</p>
+                    <a href="https://github.com/AndreaGrasso940/FinanceQuery_AI" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Andrea Claudio Grasso. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
